@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Facebook Clone</title>
+    <link rel="stylesheet" href="post.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header with Exit Button -->
+        <header class="header">
+            <a href="event.html" class="exit-button">X</a>
+            <div class="user-info">
+                <img src="avatar.jpg" alt="User Avatar" class="avatar">
+                <span class="user-name">John Doe</span>
+            </div>
+        </header>
+
+        <!-- Post Box -->
+        <div class="post-box">
+            <textarea id="postContent" rows="4" placeholder="What's on your mind?" class="post-textarea"></textarea>
+
+            <!-- Attachments Section -->
+            <div class="attachments">
+                <button onclick="attachImage()" class="attachment-button">📷</button>
+                <button onclick="attachEmotion()" class="attachment-button">😊</button>
+                <button onclick="attachGIF()" class="attachment-button">GIF</button>
+                <button onclick="attachVideo()" class="attachment-button">🎥</button>
+            </div>
+            
+            <button onclick="addPost()" class="post-button">Post</button>
+        </div>
+
+        <!-- Posts -->
+        <div class="posts" id="posts"></div>
+    </div>
+
+    <script src="post.js"></script>
+</body>
+</html>
